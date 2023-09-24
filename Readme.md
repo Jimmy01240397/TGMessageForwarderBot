@@ -3,7 +3,7 @@
 You can use this bot to send anonymous message to your group by send message to this bot.
 
 ## Build
-1. install golang 1.19
+1. Install golang 1.19
 2. Clone this repo and cd into TGMessageForwarderBot
 ``` bash
 git clone https://github.com/Jimmy01240397/TGMessageForwarderBot
