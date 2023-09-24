@@ -1,4 +1,4 @@
-# MessageForwarder
+# TGMessageForwarderBot
 
 You can use this bot to send anonymous message to your group by send message to this bot.
 
