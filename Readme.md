@@ -15,7 +15,11 @@ make
 ```
 
 ## Run
-1. Copy .env.sample to .env and write your config
+1. After [Build](#build) cd into `bin` dir
+``` bash
+cd bin
+```
+2. Copy .env.sample to .env and write your config
 ``` bash
 cp .env.sample .env
 vim .env
@@ -25,8 +29,7 @@ vim .env
 TGBOTTOKEN=<token>
 DBNAME=data.db
 ```
-2. Run tgmsgforwarderbot
+3. Run tgmsgforwarderbot
 ``` bash
-cd bin
 ./tgmsgforwarderbot
 ```
