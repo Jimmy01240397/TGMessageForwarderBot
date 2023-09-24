@@ -29,7 +29,7 @@ vim .env
 TGBOTTOKEN=<token>
 DBNAME=data.db
 ```
-3. Run tgmsgforwarderbot
+3. Run `tgmsgforwarderbot`
 ``` bash
 ./tgmsgforwarderbot
 ```
