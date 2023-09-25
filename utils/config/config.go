@@ -2,8 +2,9 @@ package config
 
 import (
     "os"
-    "log"
+    //"log"
     "strings"
+    "path/filepath"
     "github.com/joho/godotenv"
 )
 
@@ -12,10 +13,12 @@ var DBname string
 var Debug bool
 
 func init() {
-    err := godotenv.Load()
-    if err != nil {
-        log.Panicln("Error loading .env file")
+    ex, err := os.Executable()
+    if err == nil {
+        exPath := filepath.Dir(ex)
+        os.Chdir(exPath)
     }
+    err = godotenv.Load()
     Token = os.Getenv("TGBOTTOKEN")
     exists := false
     DBname, exists = os.LookupEnv("DBNAME")
